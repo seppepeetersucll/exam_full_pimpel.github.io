@@ -68,21 +68,36 @@ div.responsive {
 
 img.hout-stickers {
     width: 100%;
-    object-fit: cover;
-    position: relative;
+    margin-bottom: -0.25rem ;
 }
 
-/* img.arrow-left {
-    border: 1px solid black;
-    position: absolute;
-    z-index: 1;
+div.levering {
+    background-color: black;
+    color: #FD8D1C;
 }
 
-img.arrow-right {
-    border: 1px solid black;
-    position: absolute;
-    z-index: 1;
-} */
+.levering ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 4rem;
+
+}
+
+.levering li {
+    margin-right: 20px; /* Ruimte tussen de li-elementen */
+    display: flex;
+    align-items: center;
+}
+
+img.vec-img {
+    max-width: 7rem;
+    
+}
 
 
 
