@@ -138,6 +138,10 @@ ul {
     text-align: center;
     overflow: hidden; /* Zorgt ervoor dat de border niet uitsteekt tijdens hover */
     transition: transform 0.2s ease-in-out;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+    /* /* border-radius: 10px; 
+    Was niet mooi */
+
 }
 
 .artikel:hover {
@@ -158,27 +162,153 @@ ul {
 }
 
 .prijs::before {
-    content: '';
+    content: ''; 
     display: block;
     height: 1px;
     background-color: #000;
     margin: 10px auto;
-    width: 50%; /* Adjust the width as needed */
+    width: 50%; /* Pebaald de breedte van de lijn tussen de beschrijving en de prijs */
+}
+
+/* De laad meer knop - Op dit moment niet actief... */
+
+.btn {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.btn button {
+    padding: 0.5rem 2rem;
+    background-color: black; /* Ik wou een linear img doen als background, maar dit staat in conflict met de hover background  */
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+/* footer */
+
+footer {
+    background-color: #F5F3ED;
+}
+
+section.hele-foot-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    /* Laat de div's uitlijnen aan de bovenkant -> In dit geval de h2's */
+    /* background-color: #F5F3ED; */
+}
+
+footer h2 {
+    margin-top: 3rem;
+}
+
+.foot-section {
+    margin-bottom: 5rem;
+}
+
+
+ul.onderdeel {
+    display: inline-block;
+}
+
+.onderdeel li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.onderdeel a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* form in footer */
+
+div.foot-form {
+    max-width: 20rem;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
+}
+
+div.kader {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: #FD8D1C;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.kader p {
+    margin-top: 0.25rem;
+    text-align: left;
 }
 
 
 
+label {
+    display: none; /* Ik gebruik liever een placeholder */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.form-btn {
+    display: inline-block;
+      padding: 0.2rem 0.5rem;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #fff; 
+      color: #fff; 
+      background-color: #FD8D1C; 
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+}
+
+.form-btn:hover {
+    background-color: white;
+    color: #FD8D1C;
+}
+
+.form-btn:active /* dit is de command voor de verandering wanneer je de knop indrukt */ {
+    transform: translateY(2px);
+    /* dit deel simuleert, een druk visualisatie. Nieuwe content! */
+}
 
 
 
+/* copyright */
 
+.copy {
+    padding-bottom: 0rem;
+    text-align: center;
+}
 
+.font-small {
+    font-size: 12px;
+}
 
-
-
-
-
-
+/* media query's voor de header */
 
 @media only screen and (max-width: 1100px) {
     .header {
@@ -212,3 +342,74 @@ ul {
         display: none;
     }
 }
+
+/* media query's voor de specificatie-lijn */
+
+/* Media query voor schermen van 1250px breed en smaller */
+@media (max-width: 1250px) {
+    .levering ul {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .levering li {
+        font-size: 13px;
+    }
+
+    img.vec-img {
+        max-width: 6rem;
+    }
+}
+
+/* Media query voor schermen van 930px breed en smaller */
+@media (max-width: 960px) {
+    .levering ul {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .levering li {
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    img.vec-img {
+        max-width: 5rem;
+    }
+}
+
+/* Media query voor schermen van 720px breed en smaller */
+@media (max-width: 720px) {
+    .levering ul {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
+    .levering li {
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    img.vec-img {
+        max-width: 4rem;
+    }
+}
+
+
+/* media query's voor de footer */
+/* media query voor 1250px en minder */
+
+@media (max-width: 1250px) {
+    section.hele-foot-nav {
+        font-size: 12px;
+    }
+}
+
+/* media query voor 1000px en minder */
+
+@media (max-width: 1250px) {
+    section.hele-foot-nav {
+        font-size: 12px;
+    }
+}
+
