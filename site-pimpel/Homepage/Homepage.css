@@ -5,6 +5,8 @@ html {
     box-sizing: border-box;
 }
 
+/* navigation */
+
 .header {
     background-image: linear-gradient(to right,#121417, #1D1F23, black);
     box-sizing: border-box;
@@ -66,10 +68,15 @@ div.responsive {
     display: none;
 }
 
+/* promotionele banner images */
+
 img.hout-stickers {
     width: 100%;
     margin-bottom: -0.25rem ;
 }
+
+/* specificatie lijn */
+
 
 div.levering {
     background-color: black;
@@ -89,7 +96,7 @@ div.levering {
 }
 
 .levering li {
-    margin-right: 20px; /* Ruimte tussen de li-elementen */
+    margin-right: 20px; 
     display: flex;
     align-items: center;
 }
@@ -100,10 +107,64 @@ img.vec-img {
 }
 
 
+/* webshop sectie */
 
+.webshop h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+.webshop {
+    display: flex;
+    justify-content: center;
+}
 
+.shop {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.artikel {
+    text-align: center;
+    overflow: hidden; /* Zorgt ervoor dat de border niet uitsteekt tijdens hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+.artikel:hover {
+    transform: scale(1.1); /* Vergroot de grootte tijdens hover */
+}
+
+.artikel img {
+    max-width: 100%;
+    height: auto;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    margin-bottom: 2rem;
+}
+
+.prijs {
+    font-weight: bold;
+    color: #555;
+}
+
+.prijs::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #000;
+    margin: 10px auto;
+    width: 50%; /* Adjust the width as needed */
+}
 
 
 
