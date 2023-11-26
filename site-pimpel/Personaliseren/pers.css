@@ -183,7 +183,94 @@ h3 {
 /* end categoriën */
 
 
+/* start van shop styling */
+.webshop h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+.webshop {
+    display: flex;
+    justify-content: center;
+}
+
+.shop {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.artikel {
+    text-align: center;
+    overflow: hidden; /* Zorgt ervoor dat de border niet uitsteekt tijdens hover */
+    transition: transform 0.2s ease-in-out;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+    /* /* border-radius: 10px; 
+    Was niet mooi */
+
+}
+
+.artikel:hover {
+    transform: scale(1.1); /* Vergroot de grootte tijdens hover */
+}
+
+.artikel img {
+    max-width: 100%;
+    height: auto;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    margin-bottom: 2rem;
+}
+
+.prijs {
+    font-weight: bold;
+    color: #555;
+}
+
+.prijs::before {
+    content: ''; 
+    display: block;
+    height: 1px;
+    background-color: #000;
+    margin: 10px auto;
+    width: 50%; /* Pebaald de breedte van de lijn tussen de beschrijving en de prijs */
+}
+
+/* De laad meer knop - Op dit moment niet actief... */
+
+.btn {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.btn button {
+    padding: 0.5rem 2rem;
+    background-color: black; /* Ik wou een linear img doen als background, maar dit staat in conflict met de hover background  */
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* End van shop styling */
 
 
 
