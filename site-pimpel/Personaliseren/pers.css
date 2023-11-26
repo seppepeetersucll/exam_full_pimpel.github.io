@@ -128,9 +128,18 @@ div.pagina-naam {
 
 /* start categoriën */
 
+
 div.categorien {
-    margin-top: 4rem;
-    max-width: 2000px;
+    margin-top: 2rem;
+    max-width: 1500px;
+    width: 100%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* .categorien h2 {
@@ -140,32 +149,22 @@ div.categorien {
     border-radius: 5px;
 } */ 
 /* Ik laat de H2 voorlopig weg */
-  
-.cat-lijst {
-    display: flex; 
-    flex-wrap: wrap; /* Zorg ervoor dat de items naar een nieuwe rij gaan als ze niet in één rij passen */
-    list-style: none;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+
+ul.cat-lijst {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(5, 1fr); 
+    /* geen autofill gebruiken, want anders krijg je op grote schermen meer dan 5 kolommen, dat is niet mooi */
+    justify-items: center;
+    
 }
 
-.cat-lijst li {
-    max-width: 15rem;
-    max-height: 10rem;
-    /* background-color: grey ; */
-    margin-bottom: 1rem;
-    margin-right: 3rem;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px 1px grey;
-    font-size: 12px;
-}
-
-
-.cat-item {
-    flex: 1 0 20%; 
+li.cat-item {
     padding: 10px; 
     box-sizing: border-box; 
+    box-shadow: 1px 1px 2px 2px grey;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 h3 {
@@ -173,9 +172,26 @@ h3 {
     text-align: center;
 }
 
+h3::after {
+    content: '';
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 1px; 
+    background-color: grey; 
+    margin-top: 8px; 
+}
+
+
 .cat-item p {
     font-style: italic; /* Maak de beschrijvingen cursief */
     text-align: center;
+}
+
+.cat-item:hover {
+    overflow: hidden; /* Zorgt ervoor dat de border niet uitsteekt tijdens hover */
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
 }
 
 
