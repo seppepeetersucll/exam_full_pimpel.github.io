@@ -79,7 +79,7 @@ img.hout-stickers {
 
 
 div.levering {
-    background-color: black;
+    background-image: linear-gradient(to right,#121417, #1D1F23, black);
     color: #FD8D1C;
 }
 
@@ -215,24 +215,26 @@ footer h2 {
 }
 
 .foot-section {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
 }
 
 
 ul.onderdeel {
     display: inline-block;
+    list-style-type: none;
+    padding: 0;
 }
 
 .onderdeel li {
-    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    
 }
 
 .onderdeel a {
     list-style: none;
     text-decoration: none;
     color: black;
-
 }
 
 /* form in footer */
@@ -403,13 +405,61 @@ input {
     section.hele-foot-nav {
         font-size: 12px;
     }
+
+    .copy {
+        font-size: 14px;
+    }
+
+    .font-small {
+        font-size: 11px;
+    }
+
 }
 
-/* media query voor 1000px en minder */
-
-@media (max-width: 1250px) {
+@media (max-width: 950px) {
     section.hele-foot-nav {
-        font-size: 12px;
+        display: block;
+        font-size: 14px;
     }
+
+    div.foot-section {
+        margin: 0;
+    }
+
+    .foot-section h2 {
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        position: relative;
+    }
+
+    .foot-section h2::after {
+        content: '';
+        position: absolute; 
+        bottom: 0; 
+        left: 1rem; 
+        width: 95%; 
+        height: 1px; 
+        background-color: #000;
+    }
+
+    div.foot-form {
+        display: none;
+    }
+
+
+    div.foot-form {
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    ul.foot-section {
+        margin-bottom: 0;
+    }
+
+    .foot-section li {
+        margin-left: 2rem;
+    }
+    
 }
 

@@ -1,0 +1,114 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+
+.header {
+    background-image: linear-gradient(to right,#121417, #1D1F23, black);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+img.logo {
+    max-height: 110px;
+    padding: 0.25rem;
+    margin-left: 6rem;
+}
+
+div.login-desk {
+    margin-right: 6rem;
+}
+
+img.login-btn {
+    max-height: 6rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+
+img.winkelkarretje {
+    max-width: 2rem;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+}
+
+ul.nav {
+    display: flex;
+    list-style-type:none;
+    gap: 3rem;
+}
+
+li.nav-element a {
+    text-decoration: none;
+    color: #FFFAF3;
+}
+
+li.nav-element a:hover {
+    color: #FD8F1B;
+}
+
+li.nav-element a:active {
+    color: #FD8F1B;
+}
+
+div.responsive {
+    max-height: 6rem;
+    align-items: center;
+    max-height: 2rem;
+    margin-right: 5rem;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design / media query's of header */
+
+@media only screen and (max-width: 1100px) {
+    .header {
+        align-items: center;
+    }
+
+    img.logo {
+        margin-left: 150px;
+    }
+
+    div.login-desk {
+        display: none;
+    }
+
+    div.responsive {
+        display: block;
+        margin-right: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    img.responsive-btn {
+        max-width: 2.5rem;
+        /* margin-left: auto; */
+    }
+
+    img.winkelkarretje {
+        display: none;
+    }
+
+    ul.nav {
+        display: none;
+    }
+}
