@@ -1,24 +1,40 @@
-/* full html styling */
-html {
+/* start header stytle */
+
+/* end header style */
+
+
+/* start van pagina-styling */
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#F2F2F2 ;
-    margin: 1rem;
-    padding: 5rem;
     scroll-behavior: smooth;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+/* heading */
 
 div.heading {
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin: 2rem;
 }
 
 div.heading-content {
     padding:2rem;
 }
 
+/* info sectie */
+
+section.info {
+    background-color: #F5F5F5   ;
+    padding: 2rem;  
+    margin-top: 1rem;
+}
+
 div.lasergraveren {
-    margin-top: 100px;
+    margin-top: 1rem;  
 }
 
 img {
@@ -49,19 +65,59 @@ img.vrouw {
     margin-bottom: 10px;
 }
 
-.stappen {
-    margin-top: 5rem;
+/* stappenplan */
+
+div.stap-info {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 2rem;
 }
+
+ol.stappen {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style: none;
+    text-align: center;
+}
+
+li.stap h3 {
+    background-color: #FE8E1B;
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+li.stap::after {
+    content: '\00a0';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #FE8E1B;
+}
+
+
+/* service info */
 
 div.service-kader {
     border-radius: 10px;
-    margin-top: 40px;
     color: #E8EAED;
     background-color: #1C1D21;
+    margin: 2rem;
+    margin-top: 3rem;
 }
 
 div.service {
     padding:2rem;
 }
 
+/* end pagina-styling */
+
+/* start footer styling */
+
+/* end footer styling */
 
