@@ -134,13 +134,12 @@ div.categorien {
     max-width: 1500px;
     width: 100%;
     padding:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* .categorien h2 {
     background-color: #F5F3ED;
@@ -453,6 +452,17 @@ input {
 }
 
 /* end media query's for header */
+
+
+
+/* start media query's voor categorieën */
+@media only screen and (max-width: 1560px) {
+    ul.cat-lijst {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+/* end media query's voor categorieën */
 
 /* start media query's voor de footer */
 
