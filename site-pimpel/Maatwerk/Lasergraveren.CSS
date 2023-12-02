@@ -89,7 +89,7 @@ img.vrouw {
 
 .stap-lijst {
     background: #fff;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); */
     color: #333;
     list-style-type: none;
     border-radius: 10px;
@@ -192,8 +192,58 @@ img.vrouw {
 
 .current-item .progress-count {
     color: #fe8d19;
-
 }
+
+/* Aanvullende stijlen voor het formulier */
+
+form {
+    max-width: 600px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.materialen {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.materialen label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #fe8d19;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e07316;
+}
+
 
 /* service info */
 
