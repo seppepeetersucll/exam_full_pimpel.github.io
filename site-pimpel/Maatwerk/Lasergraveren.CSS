@@ -1,5 +1,109 @@
 /* start header stytle */
+.header {
+    background-image: linear-gradient(to right,#121417, #1D1F23, black);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+img.logo {
+    max-height: 110px;
+    padding: 0.25rem;
+    margin-left: 6rem;
+}
+
+div.login-desk {
+    margin-right: 6rem;
+}
+
+img.login-btn {
+    max-height: 6rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+
+img.winkelkarretje {
+    max-width: 2rem;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+}
+
+ul.nav {
+    display: flex;
+    list-style-type:none;
+    gap: 3rem;
+}
+
+li.nav-element a {
+    text-decoration: none;
+    color: #FFFAF3;
+}
+
+li.nav-element a:hover {
+    color: #FD8F1B;
+}
+
+li.nav-element a:active {
+    color: #FD8F1B;
+}
+
+div.responsive {
+    max-height: 6rem;
+    align-items: center;
+    max-height: 2rem;
+    margin-right: 5rem;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design / media query's of header */
+
+@media only screen and (max-width: 1100px) {
+    .header {
+        align-items: center;
+    }
+
+    img.logo {
+        margin-left: 150px;
+    }
+
+    div.login-desk {
+        display: none;
+    }
+
+    div.responsive {
+        display: block;
+        margin-right: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    img.responsive-btn {
+        max-width: 2.5rem;
+        /* margin-left: auto; */
+    }
+
+    img.winkelkarretje {
+        display: none;
+    }
+
+    ul.nav {
+        display: none;
+    }
+}
 /* end header style */
 
 
@@ -200,30 +304,25 @@ form {
     max-width: 600px;
     margin: 20px;
     background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
     padding: 20px;
+    
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
+.materialen label {
     font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 .materialen {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+label input .materialen {
+    display: inline;
 }
 
 .materialen label {
@@ -262,6 +361,181 @@ div.service {
 /* end pagina-styling */
 
 /* start footer styling */
+footer {
+    background-color: #F5F3ED;
+}
 
+section.hele-foot-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    /* Laat de div's uitlijnen aan de bovenkant -> In dit geval de h2's */
+    /* background-color: #F5F3ED; */
+}
+
+footer h2 {
+    margin-top: 3rem;
+}
+
+.foot-section {
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+
+ul.onderdeel {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.onderdeel li {
+    margin-bottom: 0.5rem;
+    
+}
+
+.onderdeel a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* form in footer */
+
+div.foot-form {
+    max-width: 20rem;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
+}
+
+div.kader {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: #FD8D1C;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.kader p {
+    margin-top: 0.25rem;
+    text-align: left;
+}
+
+label {
+    display: none; /* Ik gebruik liever een placeholder */
+}
+
+form.korting {
+    padding: 0;
+    margin-left: 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-btn {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #fff; 
+    color: #fff; 
+    background-color: #FD8D1C; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-btn:hover {
+    background-color: white;
+    color: #FD8D1C;
+}
+
+.form-btn:active /* dit is de command voor de verandering wanneer je de knop indrukt */ {
+    transform: translateY(2px);
+    /* dit deel simuleert, een druk visualisatie. Nieuwe content! */
+}
+
+/* copyright */
+
+.copy {
+    padding-bottom: 0rem;
+    text-align: center;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+/* media query's voor de footer */
+/* media query voor 1250px en minder */
+
+@media (max-width: 1250px) {
+    section.hele-foot-nav {
+        font-size: 12px;
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+
+    .font-small {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    section.hele-foot-nav {
+        display: block;
+        font-size: 14px;
+    }
+
+    div.foot-section {
+        margin: 0;
+    }
+
+    .foot-section h2 {
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        position: relative;
+    }
+
+    .foot-section h2::after {
+        content: '';
+        position: absolute; 
+        bottom: 0; 
+        left: 1rem; 
+        width: 95%; 
+        height: 1px; 
+        background-color: #000;
+    }
+
+    div.foot-form {
+        display: none;
+    }
+
+
+    div.foot-form {
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    ul.foot-section {
+        margin-bottom: 0;
+    }
+
+    .foot-section li {
+        margin-left: 2rem;
+    }
+    
+}
 /* end footer styling */
 
