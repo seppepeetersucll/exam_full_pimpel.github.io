@@ -251,16 +251,27 @@ div.uitleg {
 section.reputatie {
     /* background-image: ; */
     height: 760px;
+    background-image: url(/site-pimpel/Images/Leaves.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 760px; 
 }
+
+
+
 
 div.reputatie-titel {
     background-image: linear-gradient(to right,#121417, #1D1F23, black);
+    box-shadow: 2px 2px 10px 2px black;
     color: #FD8F1B;
     border-radius: 5px;
     padding: 0.5rem;
     text-align: center;
     justify-content: center;
     max-width: 350px;
+    position: relative;
+    z-index: 2;
+    margin-left: 20%;
 }
 
 .reputatie-titel h2 {
@@ -268,9 +279,17 @@ div.reputatie-titel {
 }
 
 div.reputatie-uitleg {
-    box-shadow: 2px 2px 10px 2px grey;
+    background-color: #FFFAF3;
+    box-shadow: 2px 2px 10px 2px black;
+    border-radius: 5px;
     padding: 2rem;
     max-width: 700px;
+    position: absolute;
+    margin-top: -2px;
+    z-index: 1;
+    margin-left: 30%;
+    margin-right: 30%;
+
 }
 
 /* Waar we voor staan */
