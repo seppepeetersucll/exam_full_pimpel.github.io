@@ -144,6 +144,7 @@ div.title {
     }
 }
 
+/* Wie zijn wij? */
 
 div.wie {
     box-shadow: 2px 2px 10px 2px grey;
@@ -180,6 +181,37 @@ img.Peggy {
 img.Peggy:hover {
     box-shadow: 2px 2px 10px 2px #FD8F1B;
 }
+
+@media only screen and (max-width: 1230px) {
+    div.wie {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    div.wie {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.wie {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    div.wie {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    div.wie {
+        max-width: 400px;
+    }
+}
+/* Wie zijn wij? */
 
 /* verhaal */
 
@@ -244,6 +276,133 @@ div.uitleg {
     margin-left: -1rem;
     padding-left: 3rem;
 }
+
+@media only screen and (max-width: 1625px) {
+    div.leesmeer {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    div.leesmeer {
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    div.leesmeer {
+        min-width: 350px;
+        max-width: 350px;
+        height: 350px;
+        margin-left: 6rem;
+    }
+
+    img.verhaal_logo {
+        max-width: 300px;
+    }
+
+    .leesmeer h2 {
+        font-size: 35px;
+    }
+
+    .leesmeer p {
+        font-size: 16px;
+    }
+
+    div.uitleg {
+        max-width: 700px;
+        max-height: 250px;
+        margin-bottom: 10rem;
+        margin-top: auto;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    div.leesmeer {
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .leesmeer h2 {
+        font-size: 30px;
+    }
+
+    .leesmeer p {
+        font-size: 15px;
+    }
+    
+    div.uitleg {
+        max-width: 700px;
+        max-height: 250px;
+        margin-bottom: 8rem;
+        margin-top: auto;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    
+    div.uitleg {
+        max-width: 500px;
+        max-height: 200px;
+        margin-bottom: 8rem;
+        margin-top: auto;
+        font-size: 14px;
+        padding-top: 0.2rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    
+    section.verhaal {
+        display: block;
+        margin-top: -5rem;
+    }
+
+    div.leesmeer {
+        margin-left: 32.63%;
+        margin-right: 32.63%;
+    }
+
+    div.uitleg {
+        margin-left: 20%;
+        margin-top: -6rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    div.leesmeer {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    div.uitleg {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    div.leesmeer {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    div.uitleg {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    div.uitleg {
+        margin-left: 3%;
+        max-width: 450px;
+    }
+}
+
 /* verhaal */
 
 /* Waar we voor staan */
@@ -301,7 +460,40 @@ button.btn-eco:hover {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 800px) {
+
+    div.reputatie-titel {
+        max-width: 250px;
+    }
+
+    .reputatie-titel {
+        font-size: 16px;
+    }
+
+    div.reputatie-uitleg {
+        max-width: 500px;
+        font-size: 14px;
+    }
+}
+
 /* Waar we voor staan */
+
+/* shoutout naar MIA */
+
+div.MIA {
+    background-image: linear-gradient(to right, #121417, #1D1F23, black);
+    color: white;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 12px;
+}
+
+.MIA a {
+    color: white;
+    font-weight: 550;
+}
+
+/* shoutout naar MIA */
 
 /* footer */
 
