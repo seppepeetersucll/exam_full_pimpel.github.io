@@ -1,0 +1,29 @@
+section.contact {
+    display: flex;
+}
+
+div.gegevens {
+    background-image: linear-gradient(to right,#121417, #1D1F23, black);
+    color: white;
+    padding: 1rem;
+}
+
+.gegevens img {
+    max-width: 400px;
+}
+
+form {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div.non-flex label{
+    display: block;
+    margin-top: 1rem;
+}
+
+div.flex {
+    display: flex;
+}
+

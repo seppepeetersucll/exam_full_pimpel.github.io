@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>contact</title>
+</head>
+<body>
+    <section class="Contact">
+        <div class="gegevens">
+            <h1>Contacteer ons!</h1>
+        
+            <p>Attenrode, Glabbeek 3384, België</p>
+        
+            <p>e-mail: info@pimpelboom.be</p>
+        
+            <img src="/site-pimpel/Images/map.png" alt="locatie van het bedrijf: 'PIMPEL'">
+        </div>
+        <div class="form">
+            <form action="post">
+                <h2>Contact met Pimpel</h2>
+        
+                <div class="flex">
+                    <div1>
+                        <label for="voornaam">Voornaam:</label>
+                        <input type="text" id="Voornaam" name="Voornaam" required>
+                    </div1>
+                    
+                    <div2>
+                        <label for="Naam">Naam:</label>
+                        <input type="text" id="Naam" name="Naam" required>
+                    </div2>
+                </div>
+
+                <div class="non-flex">
+                    <label for="email">E-mailadres:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefoon">Telefoonnummer:</label>
+                    <input type="tel" id="telefoon" name="telefoon">
+                   
+                    <label for="bericht">Bericht:</label>
+                    <textarea id="bericht" name="bericht" rows="4"></textarea>
+                    
+                    <button type="submit">Verstuur</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
