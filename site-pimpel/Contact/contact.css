@@ -1,22 +1,21 @@
-section.contact {
+section.Contact {
+    background-image: linear-gradient(to right,#121417, #1D1F23, black);
     display: flex;
+    justify-content: space-between;
 }
 
 div.gegevens {
-    background-image: linear-gradient(to right,#121417, #1D1F23, black);
     color: white;
     padding: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .gegevens img {
     max-width: 400px;
 }
 
-form {
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* form styling */
 
 div.non-flex label{
     display: block;
@@ -25,4 +24,74 @@ div.non-flex label{
 
 div.flex {
     display: flex;
+}
+
+div.form {
+background-color: #FF8F1D;
+width: 60rem;
+justify-content: center;
+align-items: center;
+
+}
+
+form {
+    background-color: #FF8F1D;
+    color: #101113;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 30rem;
+    margin: auto;
+}
+
+h2 {
+    color: #101113;
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex div {
+    flex: 1;
+}
+
+label,
+input,
+textarea,
+button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.uit-elkaar {
+    gap: 1rem;
+}
+
+input, 
+textarea {
+    box-shadow: 1px 1px 4px .5px black;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 5rem;
+}
+
+button {
+    background-color: #101113;
+    color: #FF8F1D;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
 }
