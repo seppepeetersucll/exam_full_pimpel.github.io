@@ -1,3 +1,8 @@
+// Variables
+$primary-color: #FD8E1C;
+$background-color: linear-gradient(to right, #121417, #1D1F23, black);
+
+// Global Styles
 html {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -5,56 +10,66 @@ html {
   box-sizing: border-box;
 }
 
+// Header Styles
 .header {
-  background-image: linear-gradient(to right, #121417, #1D1F23, black);
+  background-image: $background-color;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.header img.logo {
-  max-height: 110px;
-  padding: 0.25rem;
-  margin-left: 6rem;
-}
-.header div.login-desk {
-  margin-right: 6rem;
-}
-.header img.login-btn {
-  max-height: 6rem;
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-.header img.winkelkarretje {
-  max-width: 2rem;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-.header ul.nav {
-  display: flex;
-  list-style-type: none;
-  gap: 3rem;
-}
-.header li.nav-element a {
-  text-decoration: none;
-  color: #FFFAF3;
-}
-.header li.nav-element a:hover,
-.header li.nav-element a:active {
-  color: #FD8E1C;
-}
-.header div.responsive {
-  max-height: 6rem;
-  align-items: center;
-  max-height: 2rem;
-  margin-right: 5rem;
-  display: none;
+
+  img.logo {
+    max-height: 110px;
+    padding: 0.25rem;
+    margin-left: 6rem;
+  }
+
+  div.login-desk {
+    margin-right: 6rem;
+  }
+
+  img.login-btn {
+    max-height: 6rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  img.winkelkarretje {
+    max-width: 2rem;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  ul.nav {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+  }
+
+  li.nav-element a {
+    text-decoration: none;
+    color: #FFFAF3;
+  }
+
+  li.nav-element a:hover,
+  li.nav-element a:active {
+    color: $primary-color;
+  }
+
+  div.responsive {
+    max-height: 6rem;
+    align-items: center;
+    max-height: 2rem;
+    margin-right: 5rem;
+    display: none;
+  }
 }
 
+// Category Title Styles
 div.pagina-naam {
-  background-image: linear-gradient(to right, #121417, #1D1F23, black);
+  background-image: $background-color;
   margin: 2rem 15%;
   border-radius: 10px;
   display: flex;
@@ -63,28 +78,32 @@ div.pagina-naam {
   justify-content: center;
   box-shadow: 2px 2px 10px 2px grey;
   padding: 2rem;
-}
-div.pagina-naam h1::after {
-  content: "";
-  width: 100%;
-  display: block;
-  height: 2px;
-  background-color: white;
-}
-div.pagina-naam h1 {
-  color: white;
-  font-weight: 300;
-}
-div.pagina-naam .onderscheiding::after {
-  content: "";
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  height: 2px;
-  background-color: #000;
-  margin-top: 8px;
+
+  h1::after {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: white;
+  }
+
+  h1 {
+    color: white;
+    font-weight: 300;
+  }
+
+  .onderscheiding::after {
+    content: '';
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000;
+    margin-top: 8px;
+  }
 }
 
+// Categories Styles
 section.content {
   margin: 1rem;
 }
@@ -111,28 +130,33 @@ li.cat-item {
   cursor: pointer;
   width: 375px;
   height: 125px;
-}
-li.cat-item h3 {
-  color: #FD8E1C;
-  text-align: center;
-}
-li.cat-item h3::after {
-  content: "";
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  height: 1px;
-  background-color: grey;
-  margin-top: 8px;
-}
-li.cat-item p {
-  font-style: italic;
-  text-align: center;
-}
-li.cat-item:hover {
-  background-color: #F1F1F1;
+
+  h3 {
+    color: $primary-color;
+    text-align: center;
+  }
+
+  h3::after {
+    content: '';
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: grey;
+    margin-top: 8px;
+  }
+
+  p {
+    font-style: italic;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: #F1F1F1;
+  }
 }
 
+// Shop Styles
 .webshop h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -177,37 +201,42 @@ ul {
 .prijs {
   font-weight: bold;
   color: #555;
-}
-.prijs::before {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #000;
-  margin: 10px auto;
-  width: 50%;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #000;
+    margin: 10px auto;
+    width: 50%;
+  }
 }
 
+// Button Styles
 .btn {
   margin-top: 5rem;
   margin-bottom: 5rem;
   justify-content: center;
   align-content: center;
   text-align: center;
-}
-.btn button {
-  padding: 0.5rem 2rem;
-  background-color: black;
-  color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
-  border: none;
-}
-.btn button:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+
+  button {
+    padding: 0.5rem 2rem;
+    background-color: black;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
+// Footer Styles
 footer {
   background-color: #F5F3ED;
 }
@@ -216,9 +245,10 @@ section.hele-foot-nav {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-}
-section.hele-foot-nav h2 {
-  margin-top: 3rem;
+
+  h2 {
+    margin-top: 3rem;
+  }
 }
 
 .foot-section {
@@ -230,135 +260,164 @@ ul.onderdeel {
   display: inline-block;
   list-style-type: none;
   padding: 0;
-}
-ul.onderdeel li {
-  margin-bottom: 0.5rem;
-}
-ul.onderdeel a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
 }
 
+// Footer Form Styles
 div.foot-form {
   max-width: 20rem;
   border-radius: 5px;
-  background-color: #FD8E1C;
+  background-color: $primary-color;
   padding: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-div.foot-form p {
-  margin-top: 0.25rem;
-  text-align: left;
-}
-div.foot-form label {
-  display: none;
-}
-div.foot-form input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: none;
-}
-div.foot-form .form-btn {
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid #fff;
-  color: #fff;
-  background-color: #FD8E1C;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-div.foot-form .form-btn:hover {
-  background-color: white;
-  color: #FD8E1C;
-}
-div.foot-form .form-btn:active {
-  transform: translateY(2px);
+
+  p {
+    margin-top: 0.25rem;
+    text-align: left;
+  }
+
+  label {
+    display: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .form-btn {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: white;
+      color: $primary-color;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
 }
 
+// Copyright Styles
 .copy {
   padding-bottom: 0rem;
   text-align: center;
-}
-.copy .font-small {
-  font-size: 12px;
+
+  .font-small {
+    font-size: 12px;
+  }
 }
 
+// Media Queries for Header
 @media only screen and (max-width: 1100px) {
   .header {
     align-items: center;
     justify-content: center;
-  }
-  .header img.logo {
-    margin-left: 0;
-  }
-  .header div.login-desk {
-    display: none;
-  }
-  .header div.responsive {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: -50px;
-  }
-  .header img.responsive-btn {
-    max-width: 2.5rem;
-  }
-  .header img.winkelkarretje {
-    display: none;
-  }
-  .header ul.nav {
-    display: none;
+
+    img.logo {
+      margin-left: 0;
+    }
+
+    div.login-desk {
+      display: none;
+    }
+
+    div.responsive {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: -50px;
+    }
+
+    img.responsive-btn {
+      max-width: 2.5rem;
+    }
+
+    img.winkelkarretje {
+      display: none;
+    }
+
+    ul.nav {
+      display: none;
+    }
   }
 }
+
+// Media Queries for Category Title
 @media (max-width: 900px) {
   .pagina-naam h1 {
     font-size: 18px;
   }
 }
+
 @media (max-width: 1290px) {
   li.cat-item {
     padding: 5px;
     width: 350px;
     height: 109px;
   }
+
   .cat-item h3 {
     font-size: 16px;
   }
+
   .cat-item p {
     font-size: 13px;
   }
 }
+
 @media (max-width: 1100px) {
   li.cat-item {
     padding: 5px;
     width: 330px;
     height: 95px;
   }
+
   .cat-item h3 {
     font-size: 15px;
   }
+
   .cat-item p {
     font-size: 12px;
   }
 }
+
 @media (max-width: 1050px) {
   li.cat-item {
     padding: 5px;
     width: 300px;
     height: 90px;
   }
+
   .cat-item h3 {
     font-size: 15px;
     margin-bottom: 0;
   }
+
   .cat-item p {
     font-size: 12px;
     padding-left: 0.25rem;
@@ -366,16 +425,19 @@ div.foot-form .form-btn:active {
     padding-bottom: 0.25rem;
   }
 }
+
 @media (max-width: 950px) {
   li.cat-item {
     padding: 5px;
     width: 250px;
     height: 90px;
   }
+
   .cat-item h3 {
     font-size: 15px;
     margin-bottom: 0;
   }
+
   .cat-item p {
     font-size: 12px;
     padding-left: 0.25rem;
@@ -383,22 +445,26 @@ div.foot-form .form-btn:active {
     padding-bottom: 0.25rem;
   }
 }
+
 @media (max-width: 800px) {
   ul.cat-lijst {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
   }
+
   li.cat-item {
     padding: 5px;
     width: 300px;
     height: 100px;
     grid-template-columns: 1fr 1fr;
   }
+
   .cat-item h3 {
     font-size: 15px;
     margin-bottom: 0;
   }
+
   .cat-item p {
     font-size: 12px;
     padding-left: 0.25rem;
@@ -406,22 +472,26 @@ div.foot-form .form-btn:active {
     padding-bottom: 0.25rem;
   }
 }
+
 @media (max-width: 630px) {
   ul.cat-lijst {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
   }
+
   li.cat-item {
     padding: 5px;
     width: 220px;
     height: 80px;
     grid-template-columns: 1fr 1fr;
   }
+
   .cat-item h3 {
     font-size: 12px;
     margin-bottom: 0;
   }
+
   .cat-item p {
     font-size: 10px;
     padding-left: 0.25rem;
@@ -429,51 +499,63 @@ div.foot-form .form-btn:active {
     padding-bottom: 0.25rem;
   }
 }
+
+// Media Queries for Footer
 @media (max-width: 1250px) {
   section.hele-foot-nav {
     font-size: 12px;
   }
+
   .copy {
     font-size: 14px;
   }
+
   .font-small {
     font-size: 11px;
   }
 }
+
 @media (max-width: 950px) {
   section.hele-foot-nav {
     display: block;
     font-size: 14px;
   }
+
   div.foot-section {
     margin: 0;
   }
+
   .foot-section h2 {
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
     position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+      width: 95%;
+      height: 1px;
+      background-color: #000;
+    }
   }
-  .foot-section h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    width: 95%;
-    height: 1px;
-    background-color: #000;
-  }
+
   div.foot-form {
     display: none;
   }
+
   div.foot-form {
     padding-left: 2rem;
     padding-top: 2rem;
   }
+
   .foot-section li {
     margin-left: 2rem;
   }
+
   .copy {
     margin-top: 2rem;
   }
-}/*# sourceMappingURL=pers.css.map */
+}

@@ -1,490 +1,439 @@
 html {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0.5rem;
-    box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.5rem;
+  box-sizing: border-box;
 }
 
 /* start header stytle */
 .header {
-    background-image: linear-gradient(to right,#121417, #1D1F23, black);
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  background-image: linear-gradient(to right, #121417, #1D1F23, black);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 img.logo {
-    max-height: 110px;
-    padding: 0.25rem;
-    margin-left: 6rem;
+  max-height: 110px;
+  padding: 0.25rem;
+  margin-left: 6rem;
 }
 
 div.login-desk {
-    margin-right: 6rem;
+  margin-right: 6rem;
 }
 
 img.login-btn {
-    max-height: 6rem;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    
+  max-height: 6rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 img.winkelkarretje {
-    max-width: 2rem;
-    position: fixed;
-    top: 20px; 
-    right: 20px; 
+  max-width: 2rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 ul.nav {
-    display: flex;
-    list-style-type:none;
-    gap: 3rem;
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
 }
 
 li.nav-element a {
-    text-decoration: none;
-    color: #FFFAF3;
+  text-decoration: none;
+  color: #FFFAF3;
 }
 
 li.nav-element a:hover {
-    color: #FD8F1B;
+  color: #FD8F1B;
 }
 
 li.nav-element a:active {
-    color: #FD8F1B;
+  color: #FD8F1B;
 }
 
 div.responsive {
-    max-height: 6rem;
-    align-items: center;
-    max-height: 2rem;
-    margin-right: 5rem;
-    display: none;
+  max-height: 6rem;
+  align-items: center;
+  max-height: 2rem;
+  margin-right: 5rem;
+  display: none;
 }
 
 /* responsive design / media query's of header */
-
 @media only screen and (max-width: 1100px) {
-    .header {
-        align-items: center;
-        justify-content: center;
-    }
-
-    img.logo {
-        margin-left: 0;
-    }
-
-    div.login-desk {
-        display: none;
-    }
-
-    div.responsive {
-        display: block;
-        position: fixed;
-        top: 20px; 
-        right: -50px;
-    }
-
-    img.responsive-btn {
-        max-width: 2.5rem;
-        /* margin-left: auto; */
-    }
-
-    img.winkelkarretje {
-        display: none;
-    }
-
-    ul.nav {
-        display: none;
-    }
+  .header {
+    align-items: center;
+    justify-content: center;
+  }
+  img.logo {
+    margin-left: 0;
+  }
+  div.login-desk {
+    display: none;
+  }
+  div.responsive {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: -50px;
+  }
+  img.responsive-btn {
+    max-width: 2.5rem;
+    /* margin-left: auto; */
+  }
+  img.winkelkarretje {
+    display: none;
+  }
+  ul.nav {
+    display: none;
+  }
 }
 /* end header style */
-
-
 /* start van pagina-styling */
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* heading */
-
 div.heading {
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 2rem;
 }
 
 div.heading-content {
-    padding:2rem;
+  padding: 2rem;
 }
 
 /* info sectie */
-
 section.info {
-    background-color: #F5F5F5   ;
-    padding: 2rem;  
-    margin-top: 1rem;
+  background-color: #F5F5F5;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
 div.lasergraveren {
-    margin-top: 1rem;  
+  margin-top: 1rem;
 }
 
 img.vrouw {
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 img.Lasergraveren {
-    max-height: 300px;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+  max-height: 300px;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 div.voordelen-mogelijkheden {
-    margin-top: 100px;
-    margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
 
 .sum {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 img.vrouw {
-    height: 300px;
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 10px;
+  height: 300px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 /* stappenplan intro */
-
 .stap-info {
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 2rem;
-    padding: 2rem; 
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 /* stappenplan */
 section.stappenplan {
-    text-align: center; 
+  text-align: center;
 }
 
 /* Aanvullende stijlen voor het formulier */
-
 section.form {
-    height: 10rem;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 10%;
-    margin-bottom: 8rem;
+  height: 10rem;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 10%;
+  margin-bottom: 8rem;
 }
 
 .form h3 {
-    margin-bottom: 5rem;
-    text-align: center;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 .materialen {
-    display: flex;
-    margin-bottom: 20px;
-    text-align: center;
+  display: flex;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .materialen label {
-    font-weight: bold;
-    display: block;
+  font-weight: bold;
+  display: block;
 }
 
 button {
-    background-color: #fe8d19;
-    color: #fff;
-    padding: 1.5rem 3rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+  background-color: #fe8d19;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
 }
 
 div.btn-form {
-    text-align: center;
-    margin-top: 4rem;
+  text-align: center;
+  margin-top: 4rem;
 }
 
 button:hover {
-    background-color: #e07316;
+  background-color: #e07316;
 }
 
-
 /* service info */
-
 div.service-kader {
-    border-radius: 10px;
-    color: #E8EAED;
-    background-color: #1C1D21;
-    margin: 2rem;
+  border-radius: 10px;
+  color: #E8EAED;
+  background-color: #1C1D21;
+  margin: 2rem;
 }
 
 div.service {
-    padding:2rem;
+  padding: 2rem;
 }
 
 /* end pagina-styling */
 /* start media-query's for pagina */
 @media (max-width: 890px) {
-    .heading-content h1 {
-        text-align: center;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    img.Lasergraveren, img.vrouw {
-        height: 280px;
-        width: auto;
-    }
-    
-    img.Progress-bar {
-        max-width: 630px;
-    }
-    
-    .btn-form button {
-        padding: 1rem;
-    }
+  .heading-content h1 {
+    text-align: center;
+  }
+  body {
+    font-size: 14px;
+  }
+  img.Lasergraveren, img.vrouw {
+    height: 280px;
+    width: auto;
+  }
+  img.Progress-bar {
+    max-width: 630px;
+  }
+  .btn-form button {
+    padding: 1rem;
+  }
 }
-
 @media (max-width: 770px) {
-    img.Lasergraveren, img.vrouw {
-        height: 250px;
-        width: auto;
-    }
+  img.Lasergraveren, img.vrouw {
+    height: 250px;
+    width: auto;
+  }
 }
-
 @media (max-width: 700px) {
-    img.Lasergraveren, img.vrouw {
-        height: 200px;
-        width: auto;
-    }
+  img.Lasergraveren, img.vrouw {
+    height: 200px;
+    width: auto;
+  }
 }
-
 @media (max-width: 620px) {
-    img.vrouw {
-        float: right;
-    }
-
-    img.Lasergraveren, img.vrouw {
-        height: 150px;
-        width: auto;
-    }
-
-    section.info h2 {
-        font-size: 16px;
-    }
-
-    section.info h3 {
-        font-size: 14px;
-    }
-
-    img.Progress-bar {
-        max-width: 500px;
-    }
+  img.vrouw {
+    float: right;
+  }
+  img.Lasergraveren, img.vrouw {
+    height: 150px;
+    width: auto;
+  }
+  section.info h2 {
+    font-size: 16px;
+  }
+  section.info h3 {
+    font-size: 14px;
+  }
+  img.Progress-bar {
+    max-width: 500px;
+  }
 }
-
-
-
 /* start footer styling */
 footer {
-    background-color: #F5F3ED;
+  background-color: #F5F3ED;
 }
 
 section.hele-foot-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; 
-    /* Laat de div's uitlijnen aan de bovenkant -> In dit geval de h2's */
-    /* background-color: #F5F3ED; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* Laat de div's uitlijnen aan de bovenkant -> In dit geval de h2's */
+  /* background-color: #F5F3ED; */
 }
 
 footer h2 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .foot-section {
-    margin-bottom: 2rem;
-    justify-content: center;
+  margin-bottom: 2rem;
+  justify-content: center;
 }
 
-
 ul.onderdeel {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
 }
 
 .onderdeel li {
-    margin-bottom: 0.5rem;
-    
+  margin-bottom: 0.5rem;
 }
 
 .onderdeel a {
-    list-style: none;
-    text-decoration: none;
-    color: black;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 /* form in footer */
-
 div.foot-form {
-    max-width: 20rem;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
+  max-width: 20rem;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
 }
 
 div.kader {
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    background-color: #FD8D1C;
-    padding: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  background-color: #FD8D1C;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .kader p {
-    margin-top: 0.25rem;
-    text-align: left;
+  margin-top: 0.25rem;
+  text-align: left;
 }
 
 label {
-    display: none; /* Ik gebruik liever een placeholder */
+  display: none; /* Ik gebruik liever een placeholder */
 }
 
 form.korting {
-    padding: 0;
-    margin-left: 0;
+  padding: 0;
+  margin-left: 0;
 }
 
 input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: none;
+  width: 100%;
+  padding: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
 }
 
 .form-btn {
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 2px solid #fff; 
-    color: #fff; 
-    background-color: #FD8D1C; 
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #FD8D1C;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .form-btn:hover {
-    background-color: white;
-    color: #FD8D1C;
+  background-color: white;
+  color: #FD8D1C;
 }
 
-.form-btn:active /* dit is de command voor de verandering wanneer je de knop indrukt */ {
-    transform: translateY(2px);
-    /* dit deel simuleert, een druk visualisatie. Nieuwe content! */
+.form-btn:active {
+  transform: translateY(2px);
+  /* dit deel simuleert, een druk visualisatie. Nieuwe content! */
 }
 
 /* copyright */
-
 .copy {
-    padding-bottom: 0rem;
-    text-align: center;
+  padding-bottom: 0rem;
+  text-align: center;
 }
 
 .font-small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 /* media query's voor de footer */
 /* media query voor 1250px en minder */
-
 @media (max-width: 1250px) {
-    section.hele-foot-nav {
-        font-size: 12px;
-    }
-
-    .copy {
-        font-size: 14px;
-    }
-
-    .font-small {
-        font-size: 11px;
-    }
-
+  section.hele-foot-nav {
+    font-size: 12px;
+  }
+  .copy {
+    font-size: 14px;
+  }
+  .font-small {
+    font-size: 11px;
+  }
 }
-
 @media (max-width: 950px) {
-    section.hele-foot-nav {
-        display: block;
-        font-size: 14px;
-    }
-
-    div.foot-section {
-        margin: 0;
-    }
-
-    .foot-section h2 {
-        padding-left: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        position: relative;
-    }
-
-    .foot-section h2::after {
-        content: '';
-        position: absolute; 
-        bottom: 0; 
-        left: 1rem; 
-        width: 95%; 
-        height: 1px; 
-        background-color: #000;
-    }
-
-    div.foot-form {
-        display: none;
-    }
-
-
-    div.foot-form {
-        padding-left: 2rem;
-        padding-top: 2rem;
-    }
-
-    ul.foot-section {
-        margin-bottom: 0;
-    }
-
-    .foot-section li {
-        margin-left: 2rem;
-    }
-    
+  section.hele-foot-nav {
+    display: block;
+    font-size: 14px;
+  }
+  div.foot-section {
+    margin: 0;
+  }
+  .foot-section h2 {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .foot-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    width: 95%;
+    height: 1px;
+    background-color: #000;
+  }
+  div.foot-form {
+    display: none;
+  }
+  div.foot-form {
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+  ul.foot-section {
+    margin-bottom: 0;
+  }
+  .foot-section li {
+    margin-left: 2rem;
+  }
 }
-/* end footer styling */
-
+/* end footer styling *//*# sourceMappingURL=lasergraveren.css.map */
